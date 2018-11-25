@@ -1,0 +1,8 @@
+article
+  h1 #{title}
+  picture
+    img title="#{title}" alt="#{title}" src="#{image}"
+    p #{sanitize body}
+    
+== render :partial => 'static_pages/disqus',
+            :locals => { id: id, title: title}

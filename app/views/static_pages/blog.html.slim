@@ -1,0 +1,2 @@
+== render :partial => 'static_pages/article',
+            :locals => { id: @article.id, title: @article.title, image: @article.hero_image.asset.url, url: @article.slug, body: @article.body }
