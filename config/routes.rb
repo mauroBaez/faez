@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
-  root "static_pages#show", page: 'home'
   get "/pages/:page" => "static_pages#show"
-  get "/blog/:slug" => "static_pages#show", page: 'blog'
+  get "/blog" => "blog_page#index"
+  get "/blog/:slug" => "blog_page#show"
+  root "static_pages#show", page: 'home'
+
   namespace :admin do
     resources :articles
     resources :article_categories

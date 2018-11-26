@@ -1,6 +1,5 @@
-section  
-  header
-    h1 Artículos
-  - for article in @articles do
+h1 Blog
+h2 Artículos
+- for article in @articles do
     == render :partial => 'static_pages/article_preview',
             :locals => { title: article.title, image: article.hero_image.asset.url, url: article.slug, body: article.body }

@@ -28,6 +28,7 @@ module Fae
               item('Site', path: fae.edit_content_block_path('site')),
           ]),
         item('Blog', subitems: [
+          item('Site', path: fae.edit_content_block_path('blog')),
           item('Artículos', path: admin_articles_path),
           item('Categorías', path: admin_article_categories_path),
         ])

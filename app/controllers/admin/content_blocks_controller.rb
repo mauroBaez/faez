@@ -4,7 +4,7 @@ module Admin
     private
 
     def fae_pages
-      [SitePage]
+      [SitePage, BlogPage]
     end
   end
 end
